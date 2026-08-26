@@ -7,6 +7,10 @@
 pipeline {
     agent any
 
+    tools {
+        maven 'MavenLab'
+    }
+
     environment {
         IMAGE_NAME = "team-skeleton"
     }
